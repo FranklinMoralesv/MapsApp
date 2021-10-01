@@ -8,11 +8,12 @@ import { ZoomRangeComponent } from './pages/zoom-range/zoom-range.component';
 const routes: Routes = [
   {
     path: '',
+    
     children: [
       { path: 'zoom-range', component: ZoomRangeComponent },
       { path: 'markers', component: MarkersComponent },
       { path: 'propiedades', component: PropiedadesComponent },
-      { path: '**', redirectTo: 'fullscreen' },
+      { path: '**', redirectTo: 'zoom-range' },
     ]
   }
 ];
